@@ -1,0 +1,33 @@
+cat > .gitignore << 'EOF'
+# Dataset files (too large for GitHub)
+*.csv
+*.zip
+*.tsv
+
+# Kaggle credentials (NEVER push)
+kaggle.json
+access_token
+.kaggle/
+.config/
+
+
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pkl
+*.h5
+*.model
+EOF
